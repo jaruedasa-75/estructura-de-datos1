@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="Mochila Orbit">
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f7a8c4"/>
+      <stop offset="100%" stop-color="#9d174d"/>
+    </linearGradient>
+    <radialGradient id="light" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.46"/>
+      <stop offset="70%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="32"/>
+    </filter>
+  </defs>
+  <rect width="800" height="1000" rx="42" fill="url(#bg)"/>
+  <circle cx="120" cy="120" r="110" fill="#ffffff" opacity="0.14" filter="url(#blur)"/>
+  <circle cx="690" cy="150" r="140" fill="#ffffff" opacity="0.10" filter="url(#blur)"/>
+  <circle cx="650" cy="870" r="170" fill="#ffffff" opacity="0.08" filter="url(#blur)"/>
+  <ellipse cx="400" cy="860" rx="250" ry="70" fill="#000000" opacity="0.22" filter="url(#blur)"/>
+  <circle cx="400" cy="520" r="300" fill="url(#light)"/>
+  <g transform="translate(400 505)">
+    <path d="M-92 -200 C-54 -222, 54 -222, 92 -200 C122 -180, 126 -132, 126 -70 L126 136 C126 184, 84 222, 0 222 C-84 222, -126 184, -126 136 L-126 -70 C-126 -132, -122 -180, -92 -200 Z" fill="#ffe4ef" opacity="0.97"/>
+    <path d="M-90 -152 C-120 -116, -120 -52, -120 -12" stroke="#db2777" stroke-width="22" stroke-linecap="round" fill="none" opacity="0.9"/>
+    <path d="M90 -152 C120 -116, 120 -52, 120 -12" stroke="#db2777" stroke-width="22" stroke-linecap="round" fill="none" opacity="0.9"/>
+    <rect x="-72" y="-76" width="144" height="80" rx="24" fill="#ffffff" opacity="0.09"/>
+    <rect x="-82" y="44" width="164" height="120" rx="28" fill="#ffffff" opacity="0.08"/>
+    <path d="M-62 -14 L62 -14" stroke="#ffffff" stroke-opacity="0.15" stroke-width="8"/>
+    <path d="M-56 84 L56 84" stroke="#ffffff" stroke-opacity="0.15" stroke-width="8"/>
+    <circle cx="0" cy="-50" r="12" fill="#db2777"/>
+  </g>
+  <text x="80" y="928" font-size="34" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#ffffff">Mochila Orbit</text>
+  <text x="80" y="960" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#ffffff" opacity="0.84">Imagen de producto incluida en el proyecto</text>
+</svg>

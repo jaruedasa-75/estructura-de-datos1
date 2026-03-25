@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UrbanStyle | Iniciar sesión</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>
+    if (sessionStorage.getItem('urbanstyleAuth') === 'true') {
+      window.location.replace('index.html');
+    }
+  </script>
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <section class="auth-panel">
+      <div class="auth-brand">
+        <img class="brand-logo brand-logo-lg" src="assets/images/urbanstyle-logo.svg" alt="UrbanStyle" />
+        <div>
+          <p class="eyebrow">Acceso privado</p>
+          <p class="muted">Entra para revisar la colección, el carrito y la experiencia completa de la tienda.</p>
+        </div>
+      </div>
+
+      <div class="auth-card">
+        <h2>Iniciar sesión</h2>
+        <p class="muted">Usa las credenciales de demostración para explorar la tienda.</p>
+
+        <form id="loginForm" class="auth-form" novalidate>
+          <label class="field">
+            <span>Usuario</span>
+            <input id="username" name="username" type="text" placeholder="demo@urbanstyle.com" autocomplete="username" />
+          </label>
+
+          <label class="field">
+            <span>Contraseña</span>
+            <input id="password" name="password" type="password" placeholder="123456" autocomplete="current-password" />
+          </label>
+
+          <button type="submit" class="btn btn-primary btn-full">Entrar</button>
+          <p class="form-hint">Credenciales de prueba: <strong>demo@urbanstyle.com</strong> / <strong>123456</strong></p>
+          <p id="loginError" class="error-message" role="alert" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <aside class="auth-aside">
+      <div class="auth-hero">
+        <span class="status-pill">Colección lista</span>
+        <h2>Moda urbana con una navegación clara y una presentación elegante.</h2>
+        <p>Una tienda pensada para verse bien en pantalla y mostrar productos, carrito y contacto de forma ordenada.</p>
+        <div class="feature-list">
+          <div class="feature-pill">Diseño responsivo</div>
+          <div class="feature-pill">Catálogo visual</div>
+          <div class="feature-pill">Compra sencilla</div>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <script src="js/login.js"></script>
+</body>
+</html>

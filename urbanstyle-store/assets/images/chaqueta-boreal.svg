@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="Chaqueta Boreal">
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#b68cff"/>
+      <stop offset="100%" stop-color="#2f3b7f"/>
+    </linearGradient>
+    <radialGradient id="light" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="32"/>
+    </filter>
+  </defs>
+  <rect width="800" height="1000" rx="42" fill="url(#bg)"/>
+  <circle cx="120" cy="120" r="110" fill="#ffffff" opacity="0.14" filter="url(#blur)"/>
+  <circle cx="690" cy="150" r="140" fill="#ffffff" opacity="0.10" filter="url(#blur)"/>
+  <circle cx="650" cy="870" r="170" fill="#ffffff" opacity="0.08" filter="url(#blur)"/>
+  <ellipse cx="400" cy="860" rx="250" ry="70" fill="#000000" opacity="0.22" filter="url(#blur)"/>
+  <circle cx="400" cy="520" r="300" fill="url(#light)"/>
+  <g transform="translate(400 500)">
+    <path d="M-155 -165 C-125 -220, -68 -248, 0 -248 C68 -248,125 -220,155 -165 L215 -72 L165 30 L124 10 L124 220 L-124 220 L-124 10 L-165 30 L-215 -72 Z" fill="#f5f0ff" opacity="0.96"/>
+    <path d="M-82 -42 L-30 18 L-36 220" stroke="#7c3aed" stroke-width="7" opacity="0.7" fill="none"/>
+    <path d="M82 -42 L30 18 L36 220" stroke="#7c3aed" stroke-width="7" opacity="0.7" fill="none"/>
+    <rect x="-138" y="-76" width="92" height="68" rx="14" fill="#ffffff" opacity="0.12"/>
+    <rect x="46" y="-76" width="92" height="68" rx="14" fill="#ffffff" opacity="0.12"/>
+    <path d="M-218 -72 C-182 -130, -152 -142, -118 -150" stroke="#7c3aed" stroke-width="20" stroke-linecap="round" fill="none" opacity="0.88"/>
+    <path d="M218 -72 C182 -130, 152 -142, 118 -150" stroke="#7c3aed" stroke-width="20" stroke-linecap="round" fill="none" opacity="0.88"/>
+    <rect x="-24" y="-16" width="48" height="236" rx="22" fill="#ffffff" opacity="0.15"/>
+    <circle cx="0" cy="-12" r="8" fill="#7c3aed"/>
+    <circle cx="0" cy="30" r="8" fill="#7c3aed"/>
+    <circle cx="0" cy="72" r="8" fill="#7c3aed"/>
+    <circle cx="0" cy="114" r="8" fill="#7c3aed"/>
+  </g>
+  <text x="80" y="928" font-size="34" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#ffffff">Chaqueta Boreal</text>
+  <text x="80" y="960" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#ffffff" opacity="0.84">Imagen de producto incluida en el proyecto</text>
+</svg>

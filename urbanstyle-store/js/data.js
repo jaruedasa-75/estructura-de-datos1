@@ -1,0 +1,113 @@
+window.FALLBACK_PRODUCTS = [
+  {
+    "id": "p-01",
+    "name": "Chaqueta Boreal",
+    "category": "Abrigos",
+    "price": 189900,
+    "description": "Chaqueta ligera con acabado resistente al viento y un tacto suave que eleva cualquier look.",
+    "info": "Exterior cortaviento · Forro suave · Corte regular",
+    "image": "assets/images/chaqueta-boreal.svg",
+    "badge": "Nuevo",
+    "featured": true,
+    "accent": "#7c3aed",
+    "initial": "B"
+  },
+  {
+    "id": "p-02",
+    "name": "Camiseta Atlas",
+    "category": "Básicos",
+    "price": 64900,
+    "description": "Algodón suave, caída cómoda y un diseño limpio para usar sola o en capas.",
+    "info": "Algodón premium · Fit relajado · Uso diario",
+    "image": "assets/images/camiseta-atlas.svg",
+    "badge": "Top",
+    "featured": true,
+    "accent": "#0f766e",
+    "initial": "A"
+  },
+  {
+    "id": "p-03",
+    "name": "Jeans Nova",
+    "category": "Denim",
+    "price": 149900,
+    "description": "Jean recto con stretch, pensado para un estilo urbano y cómodo durante todo el día.",
+    "info": "Denim stretch · Corte recto · Azul medio",
+    "image": "assets/images/jeans-nova.svg",
+    "badge": "Best seller",
+    "featured": true,
+    "accent": "#2563eb",
+    "initial": "N"
+  },
+  {
+    "id": "p-04",
+    "name": "Sneakers Pulse",
+    "category": "Calzado",
+    "price": 239900,
+    "description": "Tenis versátiles con suela cómoda, malla ligera y un perfil moderno para acompañarte todo el día.",
+    "info": "Suela cómoda · Malla ligera · Look urbano",
+    "image": "assets/images/sneakers-pulse.svg",
+    "badge": "Oferta",
+    "featured": false,
+    "accent": "#f97316",
+    "initial": "P"
+  },
+  {
+    "id": "p-05",
+    "name": "Mochila Orbit",
+    "category": "Accesorios",
+    "price": 129900,
+    "description": "Mochila compacta con espacio para tu rutina, ideal para clases, salidas o trabajo ligero.",
+    "info": "Compartimento amplio · Bolsillo frontal · Liviana",
+    "image": "assets/images/mochila-orbit.svg",
+    "badge": "Popular",
+    "featured": false,
+    "accent": "#db2777",
+    "initial": "O"
+  },
+  {
+    "id": "p-06",
+    "name": "Gafas Eclipse",
+    "category": "Accesorios",
+    "price": 89900,
+    "description": "Montura ligera con estilo minimalista, pensada para completar un outfit con elegancia.",
+    "info": "Montura ligera · Estilo minimal · Protección UV",
+    "image": "assets/images/gafas-eclipse.svg",
+    "badge": "Premium",
+    "featured": false,
+    "accent": "#14b8a6",
+    "initial": "E"
+  },
+  {
+    "id": "p-07",
+    "name": "Reloj Chrono",
+    "category": "Accesorios",
+    "price": 319900,
+    "description": "Reloj elegante con diseño limpio y una presencia ideal para looks más sofisticados.",
+    "info": "Esfera limpia · Correa metálica · Detalle elegante",
+    "image": "assets/images/reloj-chrono.svg",
+    "badge": "Exclusivo",
+    "featured": false,
+    "accent": "#64748b",
+    "initial": "C"
+  },
+  {
+    "id": "p-08",
+    "name": "Sudadera Vertex",
+    "category": "Abrigos",
+    "price": 169900,
+    "description": "Sudadera con capucha suave y una silueta cómoda para los días fríos o relajados.",
+    "info": "Capucha suave · Interior cálido · Corte urbano",
+    "image": "assets/images/sudadera-vertex.svg",
+    "badge": "Tendencia",
+    "featured": false,
+    "accent": "#4f46e5",
+    "initial": "V"
+  }
+];
+window.STORE_CONFIG = {
+  name: 'UrbanStyle',
+  demoUser: 'demo@urbanstyle.com',
+  demoPassword: '123456',
+  freeShippingThreshold: 250000,
+  shippingCost: 12900
+};

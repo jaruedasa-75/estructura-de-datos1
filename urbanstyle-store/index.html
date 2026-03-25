@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UrbanStyle | Inicio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>
+    if (sessionStorage.getItem('urbanstyleAuth') !== 'true') {
+      window.location.replace('login.html');
+    }
+  </script>
+</head>
+<body class="app-page">
+  <div class="page-shell">
+    <div id="site-header"></div>
+
+    <div class="layout-grid">
+      <div id="site-sidebar"></div>
+
+      <main class="main-content">
+        <section class="hero-card" id="inicio">
+          <div class="hero-copy">
+            <span class="status-pill">Colección de temporada</span>
+            <h2>Prendas y accesorios que combinan fácil, se ven bien y funcionan para el día a día.</h2>
+            <p>
+              UrbanStyle presenta una selección lista para vestir, con piezas versátiles, precios claros y una
+              experiencia de compra sencilla para navegar desde cualquier dispositivo.
+            </p>
+            <div class="hero-actions">
+              <a href="#catalogo" class="btn btn-primary">Ver colección</a>
+              <a href="#contacto" class="btn btn-secondary">Contacto</a>
+            </div>
+            <div class="hero-stats">
+              <article>
+                <strong>8</strong>
+                <span>estilos disponibles</span>
+              </article>
+              <article>
+                <strong>1</strong>
+                <span>carrito práctico</span>
+              </article>
+              <article>
+                <strong>24/7</strong>
+                <span>compra desde casa</span>
+              </article>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img src="assets/images/chaqueta-boreal.svg" alt="Selección destacada de UrbanStyle" />
+          </div>
+        </section>
+
+        <section class="section-block" id="destacados">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Selección destacada</p>
+              <h2>Favoritos de la semana</h2>
+            </div>
+            <p class="muted">Prendas pensadas para crear outfits completos sin complicarte.</p>
+          </div>
+          <div id="featuredGrid" class="featured-grid"></div>
+        </section>
+
+        <section class="section-block" id="catalogo">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Catálogo completo</p>
+              <h2>Explora y agrega tus favoritos</h2>
+            </div>
+            <p class="muted">Encuentra ropa y accesorios con descripciones claras e información útil de cada pieza.</p>
+          </div>
+
+          <div class="toolbar">
+            <label class="field search-field">
+              <span>Buscar</span>
+              <input id="searchInput" type="search" placeholder="Busca por nombre, detalle o categoría" />
+            </label>
+
+            <label class="field">
+              <span>Categoría</span>
+              <select id="categoryFilter">
+                <option value="all">Todas</option>
+              </select>
+            </label>
+          </div>
+
+          <div id="catalogGrid" class="catalog-grid"></div>
+        </section>
+
+        <section class="section-block mobile-cart" id="carrito">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Carrito</p>
+              <h2>Resumen de compra</h2>
+            </div>
+            <p class="muted">Revisa tus productos, ajusta cantidades y confirma el pedido en segundos.</p>
+          </div>
+          <div class="mobile-cart-panel">
+            <div class="cart-items" data-mobile-cart-items></div>
+            <div class="cart-summary">
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <strong data-mobile-cart-subtotal>$0</strong>
+              </div>
+              <div class="summary-row">
+                <span>Envío</span>
+                <strong data-mobile-cart-shipping>$0</strong>
+              </div>
+              <div class="summary-row total-row">
+                <span>Total</span>
+                <strong data-mobile-cart-total>$0</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside class="cart-panel" id="desktopCart">
+        <div class="cart-panel-header">
+          <div>
+            <p class="eyebrow">Tu compra</p>
+            <h2>Carrito</h2>
+          </div>
+          <span class="cart-count" data-cart-count>0</span>
+        </div>
+
+        <div class="cart-items" data-cart-items></div>
+
+        <div class="cart-summary">
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <strong data-cart-subtotal>$0</strong>
+          </div>
+          <div class="summary-row">
+            <span>Envío</span>
+            <strong data-cart-shipping>$0</strong>
+          </div>
+          <div class="summary-row total-row">
+            <span>Total</span>
+            <strong data-cart-total>$0</strong>
+          </div>
+        </div>
+
+        <form id="checkoutForm" class="checkout-form">
+          <h3>Finalizar compra</h3>
+          <label class="field">
+            <span>Nombre completo</span>
+            <input id="buyerName" type="text" placeholder="Tu nombre" />
+          </label>
+          <label class="field">
+            <span>Correo</span>
+            <input id="buyerEmail" type="email" placeholder="correo@ejemplo.com" />
+          </label>
+          <label class="field">
+            <span>Dirección</span>
+            <input id="buyerAddress" type="text" placeholder="Calle 123 #45-67" />
+          </label>
+          <button type="submit" class="btn btn-primary btn-full">Comprar ahora</button>
+        </form>
+      </aside>
+    </div>
+
+    <div id="site-footer"></div>
+  </div>
+
+  <template id="product-template">
+    <article class="product-card">
+      <span class="product-badge"></span>
+      <img class="product-image" alt="" />
+      <div class="product-body">
+        <p class="product-category"></p>
+        <h3 class="product-title"></h3>
+        <p class="product-description"></p>
+        <p class="product-info"></p>
+        <div class="product-footer">
+          <strong class="product-price"></strong>
+          <button class="btn btn-primary product-add" type="button">Añadir</button>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <div id="checkoutModal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" type="button" id="closeModal">×</button>
+      <p class="eyebrow">Compra confirmada</p>
+      <h3 id="modalTitle">¡Pedido realizado!</h3>
+      <p id="modalMessage" class="muted"></p>
+      <button type="button" class="btn btn-primary btn-full" id="modalButton">Seguir comprando</button>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/product-card.js"></script>
+  <script src="js/shell.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
